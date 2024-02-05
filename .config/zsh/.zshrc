@@ -18,3 +18,8 @@ export PATH="$HOME/.local/bin:$PATH"
 alias vim="nvim"
 alias la="ls -la"
 
+# %n: username
+# %m: hostname
+# %~: current working directory
+PS1='%n@%m %~$ '
+
