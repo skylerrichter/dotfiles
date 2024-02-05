@@ -11,6 +11,9 @@ export NVM_DIR="$HOME/.nvm"
 # Configure Rust.
 [ -f "$HOME/.cargo/env" ]
 
+# Set PATH for local binaries.
+export PATH="$HOME/.local/bin:$PATH"
+
 # Set aliases.
 alias vim="nvim"
 alias la="ls -la"
