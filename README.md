@@ -29,6 +29,7 @@ $ cd ~/dotfiles && stow .
 ### Keybindings
 
 ```
+n       gl          Show diagnostic
 n       gi          Jump to implementation
 n       gd          Jump to definition
 n       gr          Show references
