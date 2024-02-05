@@ -10,6 +10,20 @@
 - neovim
 - stow
 
+## Setup
+
+```
+$ git clone git@github.com:skylerrichter/dotfiles.git ~/dotfiles
+```
+
+```
+$ mkdir -p ~/.config/zsh ~/.config/tmux ~/.config/nvim ~/.config/wezterm
+```
+
+```
+$ cd ~/dotfiles && stow .
+```
+
 ## Neovim
 
 ### Keybindings
