@@ -11,7 +11,6 @@ lsp_zero.format_on_save({
     timeout_ms = 10000,
   },
   servers = {
-    ["pyright"] = { "python" },
     ["rust_analyzer"] = { "rust" }
   }
 })
@@ -19,7 +18,7 @@ lsp_zero.format_on_save({
 require("mason").setup({})
 
 require("mason-lspconfig").setup({
-  ensure_installed = { "hls", "pyright", "rust_analyzer" },
+  ensure_installed = { "hls", "pyright", "rust_analyzer", "tsserver" },
   handlers = {
     lsp_zero.default_setup
   }
