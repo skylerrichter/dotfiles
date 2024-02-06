@@ -18,7 +18,7 @@ lsp_zero.format_on_save({
 require("mason").setup({})
 
 require("mason-lspconfig").setup({
-  ensure_installed = { "hls", "pyright", "rust_analyzer", "tsserver" },
+  ensure_installed = { "hls", "phpactor", "pyright", "rust_analyzer", "tsserver" },
   handlers = {
     lsp_zero.default_setup
   }
