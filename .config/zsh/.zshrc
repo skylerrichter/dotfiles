@@ -14,6 +14,15 @@ export CARGO_DIR="$HOME/.cargo"
 # Set PATH for local binaries.
 export PATH="$HOME/.local/bin:$PATH"
 
+# Set PATH for PHPENV.
+export PHPENV_ROOT="$HOME/.phpenv"
+
+# Configure PHPENV.
+if [ -d "${PHPENV_ROOT}" ]; then
+  export PATH="${PHPENV_ROOT}/bin:${PATH}"
+  eval "$(phpenv init -)"
+fi
+
 # Set aliases.
 alias vim="nvim"
 alias la="ls -la"
