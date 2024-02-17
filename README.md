@@ -13,7 +13,7 @@
 ## Setup
 
 ```
-$ git clone git@github.com:skylerrichter/dotfiles.git ~/dotfiles
+$ git clone git@github.com:skylerrichter/dotfiles.git ~/.dotfiles
 ```
 
 ```
