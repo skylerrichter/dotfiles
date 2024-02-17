@@ -11,20 +11,7 @@ export NVM_DIR="$HOME/.nvm"
 export CARGO_DIR="$HOME/.cargo"
 [ -f "$CARGO_DIR/env" ]
 
-# Set PATH for local binaries.
-export PATH="$HOME/.local/bin:$PATH"
-
-# Set PATH for PHPENV.
-export PHPENV_ROOT="$HOME/.phpenv"
-
-# Configure PHPENV.
-if [ -d "${PHPENV_ROOT}" ]; then
-  export PATH="${PHPENV_ROOT}/bin:${PATH}"
-  eval "$(phpenv init -)"
-fi
-
 # Set aliases.
-alias vim="nvim"
 alias la="ls -la"
 
 # Set prompt.
