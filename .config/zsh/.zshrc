@@ -16,4 +16,3 @@ alias la="ls -la"
 
 # Set prompt.
 PS1='%n@%m %~$ '
-
