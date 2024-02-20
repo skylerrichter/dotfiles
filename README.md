@@ -3,11 +3,10 @@
 ## Requirements
 
 - zsh
-- tmux
-- nvim
+- zellij
+- helix
 - ghcup
 - rustup
-- neovim
 - stow
 
 ## Setup
@@ -17,22 +16,9 @@ $ git clone git@github.com:skylerrichter/dotfiles.git ~/.dotfiles
 ```
 
 ```
-$ mkdir -p ~/.config/zsh ~/.config/tmux ~/.config/nvim ~/.config/wezterm
+$ mkdir -p ~/.config/zsh ~/.config/zellij ~/.config/helix ~/.config/wezterm
 ```
 
 ```
 $ cd ~/dotfiles && stow .
-```
-
-## Neovim
-
-### Keybindings
-
-```
-n       gl          Show diagnostic
-n       gi          Jump to implementation
-n       gd          Jump to definition
-n       gr          Show references
-n       <Space>ff   Find file
-n       <Space>ft   File tree
 ```
