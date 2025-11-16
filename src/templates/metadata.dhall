@@ -12,7 +12,7 @@ in \(p : Palette) ->
       saturation=9
 
       [Desktop Entry]
-      Comment=All natural pine, faux fur and a bit of soho vibes for Fedora minimalists
+      Comment=${p.blurb}
       Name=${p.name}
       X-KDE-PluginInfo-Author=${p.author}
       X-KDE-PluginInfo-Category=

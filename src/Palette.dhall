@@ -1,5 +1,6 @@
 { name: Text
 , author: Text
+, blurb: Text
 
 , foreground: Text
 , background: Text

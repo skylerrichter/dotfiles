@@ -5,7 +5,7 @@ in \(p : Palette) ->
       ## name: ${p.name}
       ## author: ${p.author}
       ## license: MIT
-      ## blurb: All natural pine, faux fur and a bit of soho vibes for Fedora minimalists
+      ## blurb: ${p.blurb}
 
       foreground               ${p.foreground}
       background               ${p.background}

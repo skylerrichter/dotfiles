@@ -19,6 +19,8 @@ Three variants are available:
 
 ## Usage
 
+### Generate Themes
+
 Generate all themes:
 ```bash
 make
@@ -28,13 +30,48 @@ Generate specific application themes:
 ```bash
 make kitty    # Generate Kitty themes
 make zed      # Generate Zed themes
-make plasma   # Generate Plasma color schemes
+make plasma   # Generate Plasma themes
 ```
 
 Clean generated files:
 ```bash
 make clean
 ```
+
+### Installation
+
+**Kitty**
+Copy the desired theme from `dist/kitty/` to your Kitty config directory and include it in your `kitty.conf`:
+```bash
+cp dist/kitty/rose-pine-moon.conf ~/.config/kitty/
+# Add to ~/.config/kitty/kitty.conf:
+# include rose-pine-moon.conf
+```
+
+**Zed**
+Copy the `dist/zed/` directory contents to Zed's extensions directory:
+```bash
+mkdir -p ~/.local/share/zed/extensions/rose-pine-theme
+cp -r dist/zed/* ~/.local/share/zed/extensions/rose-pine-theme/
+```
+
+**KDE Plasma**
+
+1. Generate the themes: `make plasma`
+2. Install Plasma Style:
+   - Go to **System Settings** > **Appearance** > **Plasma Style**
+   - Click **Install from File...**
+   - Navigate to `dist/plasma/` and select your preferred variant (e.g., `RosePineMoon.tar.gz`)
+   - Click **Apply**
+3. Install Color Scheme:
+   - The color scheme is embedded in the tar.gz. After extracting, copy it to your color schemes directory:
+   ```bash
+   mkdir -p ~/.local/share/color-schemes
+   tar -xzf dist/plasma/RosePineMoon.tar.gz -C /tmp
+   cp /tmp/RosePineMoon/colors ~/.local/share/color-schemes/RosePineMoon.colors
+   ```
+   - Go to **System Settings** > **Appearance** > **Colors**
+   - Select **Rosé Pine Moon** (or your chosen variant)
 
 ## Generated Files
 
@@ -53,15 +90,9 @@ dist/
 │       ├── rose-pine-moon.json
 │       └── rose-pine-dawn.json
 └── plasma/
-    ├── RosePine/
-    │   ├── colors
-    │   └── metadata.desktop
-    ├── RosePineMoon/
-    │   ├── colors
-    │   └── metadata.desktop
-    └── RosePineDawn/
-        ├── colors
-        └── metadata.desktop
+    ├── RosePine.tar.gz
+    ├── RosePineMoon.tar.gz
+    └── RosePineDawn.tar.gz
 ```
 
 ## Project Structure

@@ -1,6 +1,6 @@
 let Extension = ./extension.dhall
 
-in { authors = ["Skyler Richter"]
+in { authors = "Skyler Richter"
    , description = "All natural pine, faux fur, and a bit of soho vibes for Fedora minimalists – a classy theme for Zed."
    , id = "rose-pine-theme"
    , name = "Rosé Pine"

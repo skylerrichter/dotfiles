@@ -2,6 +2,7 @@ let Palette = ./Palette.dhall
 
 in { name = "Rosé Pine Dawn"
    , author = "Skyler Richter"
+   , blurb = "All natural pine, faux fur and a bit of soho vibes for Fedora minimalists"
 
    , foreground = "#575279"
    , background = "#faf4ed"

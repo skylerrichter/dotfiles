@@ -1,4 +1,4 @@
-{ authors : List Text
+{ authors : Text
 , description : Text
 , id : Text
 , name : Text
